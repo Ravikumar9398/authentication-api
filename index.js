@@ -10,7 +10,7 @@ require("./config/config")
 app.use("/user", authentication)
 
 app.get("/", (req, res) => {
-    res.send("api is running at port 30000")
+    res.send("use /user/register for new registration and use /user/login for login")
 })
 
 app.listen(3000, () => {
